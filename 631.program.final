@@ -47,7 +47,7 @@ popsize = 4371316 # Total population as Sept 2019 is 4,371,316
 
 for (i in 1:39) {
   
-# COunting the new cases
+# Counting the new cases
   new.cases = sum(ifelse(newdata$Date.reported == Date[i] & newdata$Case.type == 1,1,0))
   count = count  + new.cases
   Daily.growth = c(Daily.growth, count)
